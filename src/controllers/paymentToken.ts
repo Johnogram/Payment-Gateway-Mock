@@ -15,8 +15,8 @@ export const paymentToken = (request: Request, response: Response, next: NextFun
     }
 
     if (body.cardNumber === '1111 1111 1111 1111') {
-      response.status(422).send({
-        error: 'Payment method was declined',
+      response.status(500).send({
+        error: 'Failed to get payment token',
       });
 
       return;

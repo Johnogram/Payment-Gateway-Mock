@@ -5,6 +5,6 @@ import { processPayment } from '../controllers/processPayment';
 const router: Router = Router({});
 
 router.post('/paymentToken', paymentToken);
-router.post('/processPayment', processPayment);
+router.post('/processPayment/:paymentToken', processPayment);
 
 export { router };
