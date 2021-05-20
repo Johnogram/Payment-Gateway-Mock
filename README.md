@@ -1,1 +1,1 @@
-# Payment-Gateway-Mock
+# Payment Gateway Mock
